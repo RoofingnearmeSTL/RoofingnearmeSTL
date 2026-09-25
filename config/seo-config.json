@@ -1,0 +1,63 @@
+{
+  "businessName": "RoofingnearmeSTL",
+  "tagline": "Professional Roofing Services in St. Louis, Missouri",
+  "description": "RoofingnearmeSTL provides expert roof replacement, repair, and storm damage services in St. Louis. Free inspections, 20-year warranty, licensed & insured.",
+  "serviceArea": {
+    "city": "St. Louis",
+    "state": "Missouri",
+    "region": "Greater St. Louis Metropolitan Area",
+    "zipCodes": ["63101", "63102", "63103", "63104", "63105", "63106", "63107", "63108", "63109", "63110"]
+  },
+  "businessInfo": {
+    "phone": "(314) 555-0147",
+    "email": "info@roofingnearmestl.com",
+    "address": "St. Louis, MO",
+    "hours": {
+      "monday": "8:00 AM - 6:00 PM",
+      "tuesday": "8:00 AM - 6:00 PM",
+      "wednesday": "8:00 AM - 6:00 PM",
+      "thursday": "8:00 AM - 6:00 PM",
+      "friday": "8:00 AM - 6:00 PM",
+      "saturday": "8:00 AM - 6:00 PM",
+      "sunday": "10:00 AM - 4:00 PM"
+    }
+  },
+  "keywords": {
+    "primary": ["roofing contractor St. Louis", "roof repair St. Louis", "roof replacement St. Louis", "emergency roof repair", "storm damage roof"],
+    "secondary": ["residential roofing", "commercial roofing", "roof inspection", "roofer near me", "shingle repair"],
+    "localKeywords": ["roofing Saint Louis", "roofing Clayton", "roofing Kirkwood", "roofing Webster Groves", "roofing Ferguson", "roofing Florissant"]
+  },
+  "services": [
+    {
+      "name": "Free Roof Inspection",
+      "slug": "free-roof-inspection",
+      "description": "Professional roof assessment with detailed report",
+      "keywords": ["free roof inspection", "roof assessment", "roof evaluation"]
+    },
+    {
+      "name": "Roof Repair",
+      "slug": "roof-repair",
+      "description": "Expert repair for leaks, damage, and deterioration",
+      "keywords": ["roof repair", "roof leak repair", "emergency roof repair"]
+    },
+    {
+      "name": "Roof Replacement",
+      "slug": "roof-replacement",
+      "description": "Complete roof replacement with warranty",
+      "keywords": ["roof replacement", "new roof", "roof installation"]
+    },
+    {
+      "name": "Storm Damage Assessment",
+      "slug": "storm-damage",
+      "description": "Immediate response to storm and weather damage",
+      "keywords": ["storm damage roof", "hail damage", "wind damage roof"]
+    }
+  ],
+  "socialProof": {
+    "yearsInBusiness": 15,
+    "projectsCompleted": 500,
+    "customerRating": 4.9,
+    "totalReviews": 127,
+    "warranty": "20-year workmanship warranty"
+  }
+}

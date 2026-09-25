@@ -1,0 +1,12 @@
+{
+  "primary": "#ff6b00",
+  "secondary": "#1a1e23",
+  "accent": "#e8f5e9",
+  "background": "#f6f5f2",
+  "text": "#1a1e23",
+  "textLight": "#ffffff",
+  "border": "#000000",
+  "success": "#4caf50",
+  "error": "#f44336",
+  "warning": "#ff9800"
+}
