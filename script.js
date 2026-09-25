@@ -3,16 +3,28 @@
   const navLinks = document.getElementById('nav-links');
 
   if (menuButton && navLinks) {
-    menuButton.setAttribute('aria-expanded', 'false');
-    if (window.matchMedia('(max-width: 900px)').matches) {
-      navLinks.setAttribute('aria-hidden', 'true');
+    const mobileQuery = window.matchMedia('(max-width: 900px)');
+
+    function syncMenuAccessibility() {
+      if (mobileQuery.matches) {
+        const expanded = navLinks.classList.contains('mobile-open');
+        menuButton.setAttribute('aria-expanded', expanded ? 'true' : 'false');
+        navLinks.setAttribute('aria-hidden', expanded ? 'false' : 'true');
+      } else {
+        navLinks.classList.remove('mobile-open');
+        menuButton.setAttribute('aria-expanded', 'false');
+        navLinks.setAttribute('aria-hidden', 'false');
+      }
     }
+
+    syncMenuAccessibility();
+
     menuButton.addEventListener('click', function () {
       navLinks.classList.toggle('mobile-open');
-      const expanded = navLinks.classList.contains('mobile-open');
-      menuButton.setAttribute('aria-expanded', expanded ? 'true' : 'false');
-      navLinks.setAttribute('aria-hidden', expanded ? 'false' : 'true');
+      syncMenuAccessibility();
     });
+
+    mobileQuery.addEventListener('change', syncMenuAccessibility);
   }
 
   const year = document.getElementById('year');
