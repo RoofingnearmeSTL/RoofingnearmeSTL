@@ -24,7 +24,11 @@
       syncMenuAccessibility();
     });
 
-    mobileQuery.addEventListener('change', syncMenuAccessibility);
+    if (mobileQuery.addEventListener) {
+      mobileQuery.addEventListener('change', syncMenuAccessibility);
+    } else if (mobileQuery.addListener) {
+      mobileQuery.addListener(syncMenuAccessibility);
+    }
   }
 
   const year = document.getElementById('year');
