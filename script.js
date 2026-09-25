@@ -35,4 +35,9 @@
   if (year) {
     year.textContent = new Date().getFullYear();
   }
+
+  const nextUrl = document.getElementById('form-next-url');
+  if (nextUrl) {
+    nextUrl.value = new URL(nextUrl.value, window.location.href).href;
+  }
 })();

@@ -20,7 +20,7 @@ body {
   background: var(--bg);
   line-height: 1.6;
 }
-a { color: inherit; text-decoration: none; }
+a { color: inherit; text-decoration: underline; }
 img { max-width: 100%; display: block; }
 
 .container {
@@ -78,6 +78,11 @@ header {
   align-items: center;
   gap: 1.2rem;
   font-weight: 600;
+}
+.brand,
+.nav a,
+.button {
+  text-decoration: none;
 }
 .nav-actions { display: flex; align-items: center; gap: 0.7rem; }
 .menu-toggle {
