@@ -1,43 +1,133 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="RoofingnearmeSTL provides roof replacement, repair, and storm damage services in St. Louis, Missouri. Free inspections and a 20-year workmanship warranty." />
-  <title>RoofingnearmeSTL | St. Louis Roofing</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>tailwind.config={theme:{extend:{colors:{ink:'#1a1e23',paper:'#f6f5f2',orange:'#ff6b00',green:'#e8f5e9'},fontFamily:{sans:['DM Sans','ui-sans-serif','system-ui'],mono:['DM Mono','ui-monospace','monospace']}}}}</script>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <style>
-    html{scroll-behavior:smooth}body{font-family:'DM Sans',sans-serif}.mono{font-family:'DM Mono',monospace}.hero-gradient{background:linear-gradient(90deg,rgba(17,20,23,.96),rgba(17,20,23,.76) 47%,rgba(17,20,23,.08))}.hero-bottom{background:linear-gradient(0deg,rgba(17,20,23,.78),transparent)}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Roofing Near Me STL provides roof replacements, repairs, inspections, storm damage assessments, and maintenance programs across Missouri and Illinois.">
+  <title>Roofing Near Me STL | St. Louis Roofing Professionals</title>
+  <link rel="icon" href="logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body class="bg-paper text-ink antialiased">
-  <div class="bg-ink text-white"><div class="mx-auto flex h-8 max-w-7xl items-center justify-between px-4 text-[10px] uppercase tracking-wider md:px-6 md:text-xs"><span class="mono flex items-center gap-2"><i class="h-2 w-2 animate-pulse rounded-full bg-orange"></i>Emergency storm response available 24/7</span><span class="mono hidden opacity-60 md:block">St. Louis City · County · St. Charles</span><span class="mono hidden gap-2 md:flex"><span>MO LIC #MO-ROOF-00000</span><span class="opacity-30">|</span><span class="text-amber-300">★ 5.0 local rating</span></span></div></div>
+<body>
+  <div class="topbar">
+    <div class="container">
+      <span>Serving St. Louis, MO and Metro East, IL</span>
+      <span>IL: <a href="tel:+16186125192">(618) 612-5192</a> · MO: <a href="tel:+13142027663">(314) 202-7663</a></span>
+    </div>
+  </div>
 
-  <header class="sticky top-0 z-50 border-b border-black/10 bg-paper/90 backdrop-blur-xl"><div class="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 md:h-[76px] md:px-6"><a href="#top" class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-[10px] bg-ink text-white"><svg viewBox="0 0 24 24" class="h-6 w-6" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 20 12 4l9 16H3Z"/><path d="m7.5 20 4.5-8 4.5 8"/></svg></span><span class="leading-none"><b class="block text-[15px] font-extrabold tracking-tight">ROOFINGNEARME<span class="text-orange">STL</span></b><small class="mono mt-1 block text-[9px] tracking-[.16em] opacity-60">ST. LOUIS ROOFING</small></span></a><nav class="mono ml-8 hidden gap-6 text-[11px] uppercase tracking-wide lg:flex"><a class="transition hover:text-orange" href="#services">Services</a><a class="transition hover:text-orange" href="#work">Our work</a><a class="transition hover:text-orange" href="#why">Why us</a><a class="transition hover:text-orange" href="#reviews">Reviews</a></nav><div class="flex items-center gap-3"><a href="tel:3145550147" class="hidden h-10 items-center gap-2 rounded-full border border-black/10 bg-white px-4 md:flex"><span class="grid h-7 w-7 place-items-center rounded-full bg-ink text-white">⌕</span><span class="mono text-[13px] font-semibold">(314) 555-0147</span></a><a href="#contact" class="hidden h-10 items-center rounded-full bg-orange px-5 text-[13px] font-semibold text-white transition hover:bg-orange/90 md:inline-flex">Free inspection →</a><button id="menuButton" class="grid h-10 w-10 place-items-center rounded-full bg-ink text-white md:hidden" aria-label="Open menu"><span id="menuIcon">☰</span></button></div></div><div id="mobileMenu" class="hidden border-t border-black/10 bg-paper px-4 py-4 md:hidden"><div class="grid grid-cols-2 gap-2 mono text-xs uppercase"><a href="#services" class="rounded-full border border-black/10 bg-white py-3 text-center">Services</a><a href="#work" class="rounded-full border border-black/10 bg-white py-3 text-center">Our work</a><a href="#why" class="rounded-full border border-black/10 bg-white py-3 text-center">Why us</a><a href="#reviews" class="rounded-full border border-black/10 bg-white py-3 text-center">Reviews</a></div><a href="tel:3145550147" class="mt-3 block rounded-full bg-ink py-3 text-center font-semibold text-white">Call (314) 555-0147</a><a href="#contact" class="mt-2 block rounded-full bg-orange py-3 text-center font-semibold text-white">Get free inspection</a></div></header>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="brand-mark">RN</span>
+        <span>Roofing Near Me STL<small>St. Louis Roofing</small></span>
+      </a>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu">☰</button>
+      <nav class="nav-links" id="nav-links">
+        <a href="index.html">Home</a>
+        <a href="services.html">Services</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <div class="nav-actions">
+        <a class="button secondary" href="services.html">View Services</a>
+        <a class="button" href="contact.html">Free Inspection</a>
+      </div>
+    </div>
+  </header>
 
-  <main id="top">
-    <section class="mx-auto max-w-7xl px-4 pt-4 md:px-6 md:pt-6"><div class="relative flex min-h-[620px] overflow-hidden rounded-[24px] bg-ink md:min-h-[650px] md:rounded-[32px]"><img src="https://images.unsplash.com/photo-1632823471565-1ecdf1c0d0b2?auto=format&fit=crop&w=2000&q=85" alt="Residential roof in St. Louis" class="absolute inset-0 h-full w-full object-cover" /><div class="hero-gradient absolute inset-0"></div><div class="hero-bottom absolute inset-0 md:hidden"></div><div class="relative z-10 grid w-full md:grid-cols-[1.1fr_.9fr]"><div class="flex flex-col justify-center p-6 md:p-10 lg:p-12"><div class="inline-flex w-fit items-center gap-2 rounded-full border border-white/20 bg-white/10 px-3 py-1.5 mono text-[10px] uppercase tracking-[.12em] text-white backdrop-blur"><span class="h-1.5 w-1.5 rounded-full bg-orange"></span>St. Louis homeowners trust us</div><h1 class="mt-6 max-w-2xl text-4xl font-extrabold leading-[.95] tracking-[-.04em] text-white md:text-6xl lg:text-[64px]">YOUR HOME<br />DESERVES A<br /><span class="text-orange">BETTER ROOF.</span></h1><div class="mt-6 flex flex-wrap gap-2"><span class="rounded-full bg-white px-3 py-1.5 text-[11px] font-semibold">✓ Licensed & insured</span><span class="rounded-full bg-white px-3 py-1.5 text-[11px] font-semibold">★ 20-year warranty</span><span class="rounded-full bg-white px-3 py-1.5 text-[11px] font-semibold">⌁ Free inspections</span></div><p class="mt-6 max-w-[430px] text-[15px] leading-7 text-white/70 md:text-base">Every roofer has shingles and nails. We bring clear communication, honest recommendations, and craftsmanship that protects your home through Missouri weather.</p><div class="mt-8 flex flex-col gap-3 sm:flex-row"><a href="tel:3145550147" class="inline-flex h-[52px] items-center justify-center gap-2 rounded-full bg-orange px-7 font-semibold text-white transition hover:bg-orange/90">Call now — (314) 555-0147</a><a href="#contact" class="inline-flex h-[52px] items-center justify-center gap-2 rounded-full bg-white px-7 font-semibold text-ink transition hover:bg-slate-100">Get free quote →</a></div><div class="mt-8 flex items-center gap-3 text-xs text-white"><div class="flex -space-x-2"><img src="https://i.pravatar.cc/100?img=12" alt="customer" class="h-8 w-8 rounded-full border-2 border-ink" /><img src="https://i.pravatar.cc/100?img=32" alt="customer" class="h-8 w-8 rounded-full border-2 border-ink" /><img src="https://i.pravatar.cc/100?img=47" alt="customer" class="h-8 w-8 rounded-full border-2 border-ink" /></div><span><b class="block text-amber-300">★★★★★</b><span class="mono opacity-70">Trusted by St. Louis homeowners</span></span></div></div><div class="hidden flex-col justify-end gap-3 p-6 lg:flex lg:p-8"><div class="rounded-[20px] bg-white p-5 text-ink shadow-2xl"><div class="flex items-center justify-between"><span class="mono text-[10px] uppercase tracking-widest opacity-60">Next available</span><span class="rounded-full bg-green px-2 py-1 mono text-[10px] font-semibold text-green-800">THIS WEEK</span></div><div class="mt-4 flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-full bg-paper text-xl">🏠</span><div><b class="block text-sm">Free roof inspection</b><span class="mono text-[11px] opacity-60">Photos + written report</span></div><span class="ml-auto text-xl text-green-700">✓</span></div><hr class="my-4 border-black/10" /><div class="grid grid-cols-3 text-center"><div><b class="block text-xl">400+</b><span class="mono text-[10px] uppercase opacity-60">Roofs / yr</span></div><div class="border-x border-black/10"><b class="block text-xl">20yr</b><span class="mono text-[10px] uppercase opacity-60">Warranty</span></div><div><b class="block text-xl">0%</b><span class="mono text-[10px] uppercase opacity-60">Pressure</span></div></div></div><div class="flex items-center gap-3 rounded-[20px] border border-white/10 bg-ink p-4 text-xs text-white"><span class="grid h-9 w-9 place-items-center rounded-full bg-orange text-lg">✓</span><span><b>Built the right way</b><br /><span class="opacity-60">Clear scope. Clean jobsite. No shortcuts.</span></span></div></div></div><div class="absolute bottom-0 left-0 right-0 h-2 bg-[repeating-linear-gradient(45deg,#ff6b00_0_12px,#111417_12px_24px)]"></div></div></section>
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <h1>We do your roof one way: the correct way.</h1>
+          <p>Every roofer has shingles and nails. Most talk about communication but fail to set clear expectations. We educate you, explain every step, and focus on details that protect your home longer.</p>
+          <p>
+            <a class="button" href="contact.html">Schedule Your Free Inspection</a>
+            <a class="button secondary" href="tel:+13142027663">Call Missouri Team</a>
+          </p>
+        </div>
+        <aside class="hero-card">
+          <h2>Why homeowners choose Roofing Near Me STL</h2>
+          <ul>
+            <li>Clear project communication from start to finish</li>
+            <li>Photo-backed findings and recommendations</li>
+            <li>Detailed installation and cleanup standards</li>
+            <li>Local expertise for St. Louis weather and storms</li>
+          </ul>
+        </aside>
+      </div>
+    </section>
 
-    <section class="mx-auto max-w-7xl px-4 md:px-6"><div class="mt-4 grid grid-cols-2 overflow-hidden rounded-[18px] border border-black/10 bg-white md:grid-cols-4"><div class="flex items-center gap-3 border-b border-r border-black/10 p-4 md:border-b-0 md:p-5"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-paper">🛡️</span><span><b class="block text-xs">Licensed & insured</b><small class="mono text-[10px] opacity-60">Fully covered</small></span></div><div class="flex items-center gap-3 border-b border-black/10 p-4 md:border-b-0 md:border-r md:p-5"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-paper">★</span><span><b class="block text-xs">5-star service</b><small class="mono text-[10px] opacity-60">Local reviews</small></span></div><div class="flex items-center gap-3 border-r border-black/10 p-4 md:p-5"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-paper">🏆</span><span><b class="block text-xs">20-year warranty</b><small class="mono text-[10px] opacity-60">Workmanship backed</small></span></div><div class="flex items-center gap-3 p-4 md:p-5"><span class="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-paper">📍</span><span><b class="block text-xs">Locally owned</b><small class="mono text-[10px] opacity-60">St. Louis, MO</small></span></div></div></section>
+    <section>
+      <div class="container">
+        <h2 class="section-title">Our value proposition</h2>
+        <p class="section-copy">Education-first guidance, honest recommendations, and quality workmanship built for Midwest weather.</p>
+        <div class="grid-3">
+          <article class="card"><h3>Educate</h3><p>We explain the condition of your roof, options, costs, and timeline before work begins.</p></article>
+          <article class="card"><h3>Communicate</h3><p>You always know what to expect, what is happening today, and what comes next.</p></article>
+          <article class="card"><h3>Execute</h3><p>Our crews focus on flashing, ventilation, and the small details that prevent future problems.</p></article>
+        </div>
+      </div>
+    </section>
 
-    <section id="services" class="mx-auto mt-16 max-w-7xl px-4 md:mt-24 md:px-6"><div class="flex flex-wrap items-end justify-between gap-4"><div><p class="mono text-[11px] uppercase tracking-[.18em] opacity-60">— What we do</p><h2 class="mt-3 text-3xl font-extrabold leading-none tracking-[-.04em] md:text-5xl">Roofing made simple.</h2></div><p class="max-w-md text-sm leading-6 opacity-70">From storm damage to complete replacements, we explain the work and do it right the first time.</p></div><div class="mt-8 grid gap-5 md:grid-cols-3"><article class="group overflow-hidden rounded-[24px] border border-black/10 bg-white"><div class="relative h-52 overflow-hidden"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=900&q=80" alt="Roof replacement" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" /><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><span class="absolute left-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white text-xl">🏠</span><span class="absolute bottom-3 left-4 rounded-full bg-white/20 px-2.5 py-1 mono text-[10px] text-white backdrop-blur">FULL SYSTEM</span></div><div class="p-6"><h3 class="text-lg font-bold">Roof Replacement</h3><p class="mt-2 text-sm leading-6 opacity-70">A complete, detail-focused roof system installed with quality materials and proper ventilation.</p><div class="mt-4 space-y-2 mono text-[11px]"><p>✓ Tear-off & cleanup</p><p>✓ Ice and water protection</p><p>✓ 20-year labor warranty</p></div></div></article><article class="group overflow-hidden rounded-[24px] border border-black/10 bg-white"><div class="relative h-52 overflow-hidden"><img src="https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&w=900&q=80" alt="Roof repair" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" /><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><span class="absolute left-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white text-xl">🔧</span><span class="absolute bottom-3 left-4 rounded-full bg-white/20 px-2.5 py-1 mono text-[10px] text-white backdrop-blur">LASTING FIXES</span></div><div class="p-6"><h3 class="text-lg font-bold">Roof Repair</h3><p class="mt-2 text-sm leading-6 opacity-70">We find the source of leaks and make repairs that last—not quick patches that come back.</p><div class="mt-4 space-y-2 mono text-[11px]"><p>✓ Leak detection</p><p>✓ Flashing & pipe boots</p><p>✓ Photo documentation</p></div></div></article><article class="group overflow-hidden rounded-[24px] border border-black/10 bg-white"><div class="relative h-52 overflow-hidden"><img src="https://images.unsplash.com/photo-1490735891913-40897cdaafd1?auto=format&fit=crop&w=900&q=80" alt="Storm damage inspection" class="h-full w-full object-cover transition duration-700 group-hover:scale-105" /><div class="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div><span class="absolute left-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-white text-xl">⛈️</span><span class="absolute bottom-3 left-4 rounded-full bg-white/20 px-2.5 py-1 mono text-[10px] text-white backdrop-blur">FAST RESPONSE</span></div><div class="p-6"><h3 class="text-lg font-bold">Storm Damage</h3><p class="mt-2 text-sm leading-6 opacity-70">Hail and wind assessments with documentation that makes your insurance process easier.</p><div class="mt-4 space-y-2 mono text-[11px]"><p>✓ Emergency tarping</p><p>✓ Adjuster coordination</p><p>✓ Free inspection</p></div></div></article></div></section>
+    <section>
+      <div class="container">
+        <h2 class="section-title">Services overview</h2>
+        <div class="grid-3">
+          <article class="card"><h3>Roof Replacements</h3><p>Complete roofing systems designed for long-term performance.</p></article>
+          <article class="card"><h3>Roof Repairs</h3><p>Targeted leak and storm repairs that address root causes.</p></article>
+          <article class="card"><h3>Inspections</h3><p>Detailed inspections with photos and straightforward explanations.</p></article>
+        </div>
+        <p><a class="button" href="services.html">See all services</a></p>
+      </div>
+    </section>
 
-    <section id="work" class="mx-auto mt-16 max-w-7xl px-4 md:mt-24 md:px-6"><div class="rounded-[28px] bg-ink p-6 text-white md:p-10"><div class="flex flex-wrap items-end justify-between gap-4"><div><p class="mono text-[11px] uppercase tracking-[.18em] opacity-50">— Recent work in St. Louis</p><h2 class="mt-3 text-3xl font-extrabold leading-none tracking-[-.04em] md:text-5xl">Before → after that lasts.</h2></div><span class="mono text-[11px] opacity-60">Drag to compare</span></div><div class="mt-8 grid gap-5 md:grid-cols-2"><div class="overflow-hidden rounded-[20px] border border-white/10 bg-white/5"><div class="relative h-64 overflow-hidden"><img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1000&q=80" alt="After roof project" class="absolute inset-0 h-full w-full object-cover" /><div id="beforeOne" class="absolute inset-y-0 left-0 overflow-hidden" style="width:52%"><img src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=1000&q=80" alt="Before roof project" class="h-full max-w-none object-cover" style="width:192%" /></div><span class="absolute left-3 top-3 rounded-full bg-black/60 px-2 py-1 mono text-[10px]">BEFORE</span><span class="absolute right-3 top-3 rounded-full bg-orange px-2 py-1 mono text-[10px]">AFTER</span></div><div class="p-4"><p class="mono text-[11px] opacity-60">Kirkwood · Full replacement · Architectural shingles</p><input aria-label="Before and after comparison" type="range" min="5" max="95" value="52" class="mt-3 w-full accent-orange" oninput="document.getElementById('beforeOne').style.width=this.value+'%'" /></div></div><div class="flex flex-col justify-center rounded-[20px] border border-white/10 bg-white/5 p-6"><span class="text-4xl text-orange">“</span><p class="mt-2 text-xl font-semibold leading-8">The difference is in the details. We don’t just install a roof—we give you confidence in the work.</p><p class="mt-5 mono text-xs opacity-60">— The RoofingnearmeSTL standard</p><a href="#contact" class="mt-8 inline-flex w-fit rounded-full bg-orange px-5 py-3 text-sm font-semibold">Talk about your project →</a></div></div></div></section>
+    <section>
+      <div class="container">
+        <h2 class="section-title">Testimonials</h2>
+        <p class="section-copy">Local homeowners trust our communication and quality standards.</p>
+      </div>
+      <div class="container grid-2">
+        <article class="quote">
+          <p>“Roofing Near Me STL walked us through every step. No confusion, no pressure, and the finished roof looks excellent.”</p>
+          <p>— St. Louis Homeowner</p>
+        </article>
+        <article class="quote">
+          <p>“After storm damage, they documented everything clearly and helped us move fast with confidence.”</p>
+          <p>— Metro East Homeowner</p>
+        </article>
+      </div>
+    </section>
 
-    <section id="why" class="mx-auto mt-16 max-w-7xl px-4 md:mt-24 md:px-6"><div class="grid gap-6 lg:grid-cols-[.9fr_1.1fr]"><div class="rounded-[28px] border border-black/10 bg-white p-6 md:p-8"><div class="grid h-12 w-12 place-items-center rounded-[14px] bg-ink text-2xl text-white">🛡️</div><h2 class="mt-6 text-3xl font-extrabold leading-none tracking-[-.04em] md:text-4xl">We’re the crew that actually shows up.</h2><p class="mt-4 text-sm leading-7 opacity-70">We educate our clients, explain every step, and focus on the small details that protect your home the longest. We do it one way: the correct way.</p><div class="mt-6 flex items-center gap-3 rounded-2xl bg-paper p-4"><span class="grid h-10 w-10 place-items-center rounded-full bg-orange font-bold text-white">R</span><span><b class="block text-sm">Clear expectations. Quality work.</b><small class="mono text-[11px] opacity-60">Owner-guided service from start to finish</small></span></div></div><div class="grid gap-4 sm:grid-cols-2"><div class="rounded-[22px] bg-ink p-6 text-white"><b class="mono text-xs text-orange">01</b><h3 class="mt-4 font-semibold">No confusing sales pitch</h3><p class="mt-2 text-xs leading-6 opacity-60">A clear scope and honest estimate before work begins.</p></div><div class="rounded-[22px] bg-ink p-6 text-white"><b class="mono text-xs text-orange">02</b><h3 class="mt-4 font-semibold">Photos, not promises</h3><p class="mt-2 text-xs leading-6 opacity-60">You see what we see, including the small details.</p></div><div class="rounded-[22px] bg-ink p-6 text-white"><b class="mono text-xs text-orange">03</b><h3 class="mt-4 font-semibold">Respectful crews</h3><p class="mt-2 text-xs leading-6 opacity-60">Landscaping protected, magnetic sweep completed.</p></div><div class="rounded-[22px] bg-ink p-6 text-white"><b class="mono text-xs text-orange">04</b><h3 class="mt-4 font-semibold">Warranty backed</h3><p class="mt-2 text-xs leading-6 opacity-60">20 years of workmanship coverage for peace of mind.</p></div></div></div></section>
-
-    <section id="reviews" class="mx-auto mt-16 max-w-7xl px-4 md:mt-24 md:px-6"><div class="flex flex-wrap items-end justify-between gap-4"><h2 class="text-3xl font-extrabold leading-none tracking-[-.04em] md:text-5xl">Neighbors talk. We listen.</h2><span class="rounded-full border border-black/10 bg-white px-3 py-1.5 mono text-[11px]">★★★★★ 5.0 · Local homeowners</span></div><div class="mt-6 grid gap-4 md:grid-cols-3"><blockquote class="flex flex-col rounded-[22px] border border-black/10 bg-white p-6"><div class="text-sm">★★★★★</div><p class="mt-4 text-sm leading-7">“From the inspection to cleanup, the whole process was organized and professional. Our new roof looks fantastic.”</p><footer class="mt-auto pt-6"><b class="block text-xs">Sarah M.</b><span class="mono text-[10px] opacity-60">St. Louis County · Replacement</span></footer></blockquote><blockquote class="flex flex-col rounded-[22px] border border-black/10 bg-white p-6"><div class="text-sm">★★★★★</div><p class="mt-4 text-sm leading-7">“After the storm, they came out quickly and helped us understand exactly what needed to be done. No pressure.”</p><footer class="mt-auto pt-6"><b class="block text-xs">Jennifer T.</b><span class="mono text-[10px] opacity-60">South County · Storm damage</span></footer></blockquote><blockquote class="flex flex-col rounded-[22px] border border-black/10 bg-white p-6"><div class="text-sm">★★★★★</div><p class="mt-4 text-sm leading-7">“They communicated every day and the crew took real care around our home. I would recommend them to anyone.”</p><footer class="mt-auto pt-6"><b class="block text-xs">David K.</b><span class="mono text-[10px] opacity-60">Kirkwood · Roof repair</span></footer></blockquote></div></section>
-
-    <section id="contact" class="mx-auto mt-16 max-w-7xl px-4 pb-10 md:mt-24 md:px-6"><div class="grid gap-6 lg:grid-cols-[1.05fr_.95fr]"><div class="relative overflow-hidden rounded-[28px] bg-ink p-6 text-white md:p-10"><div class="absolute right-0 top-0 h-72 w-72 -translate-y-1/2 translate-x-1/3 rounded-full bg-orange/20 blur-[60px]"></div><div class="relative"><span class="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/10 px-3 py-1 mono text-[10px] uppercase"><i class="h-2 w-2 animate-pulse rounded-full bg-green-400"></i>Crew available this week</span><h2 class="mt-6 text-4xl font-extrabold leading-[.92] tracking-[-.04em] md:text-5xl">Get your free<br />inspection & quote.</h2><p class="mt-4 max-w-sm text-sm leading-7 opacity-70">Fill this out and we’ll follow up during business hours. No spam, no third-party sharing.</p><div class="mt-8 grid grid-cols-2 gap-4"><div class="rounded-2xl border border-white/10 bg-white/5 p-4"><small class="mono text-[10px] uppercase opacity-60">Call / text</small><b class="mt-1 block">(314) 555-0147</b><small class="mono mt-1 block text-[10px] opacity-60">7am–7pm · Mon–Sat</small></div><div class="rounded-2xl border border-white/10 bg-white/5 p-4"><small class="mono text-[10px] uppercase opacity-60">Service area</small><b class="mt-1 block text-sm">St. Louis, MO</b><small class="mono mt-1 block text-[10px] opacity-60">City, County & St. Charles</small></div></div><p class="mt-8 mono text-[10px] opacity-60">✓ Licensed MO contractor · ✓ Fully insured · ✓ 20-year warranty</p></div></div><div class="rounded-[28px] border border-black/10 bg-white p-6 md:p-8"><form id="contactForm" class="space-y-4"><div class="grid gap-4 sm:grid-cols-2"><label class="space-y-1.5"><span class="mono text-[11px] uppercase opacity-70">Full name</span><input required name="name" placeholder="Your name" class="h-11 w-full rounded-full border border-black/15 bg-paper px-4 text-sm outline-none focus:border-orange focus:ring-2 focus:ring-orange/15" /></label><label class="space-y-1.5"><span class="mono text-[11px] uppercase opacity-70">Phone</span><input required type="tel" name="phone" placeholder="(314) 555-____" class="h-11 w-full rounded-full border border-black/15 bg-paper px-4 text-sm outline-none focus:border-orange focus:ring-2 focus:ring-orange/15" /></label></div><label class="block space-y-1.5"><span class="mono text-[11px] uppercase opacity-70">Property address</span><input required name="address" placeholder="Street, city, ZIP" class="h-11 w-full rounded-full border border-black/15 bg-paper px-4 text-sm outline-none focus:border-orange focus:ring-2 focus:ring-orange/15" /></label><label class="block space-y-1.5"><span class="mono text-[11px] uppercase opacity-70">Service needed</span><select required name="service" class="h-11 w-full rounded-full border border-black/15 bg-paper px-4 text-sm outline-none focus:border-orange focus:ring-2 focus:ring-orange/15"><option value="">Select one</option><option>Roof Replacement</option><option>Roof Repair / Leak</option><option>Storm Damage Inspection</option><option>Free Inspection / Quote</option></select></label><label class="block space-y-1.5"><span class="mono text-[11px] uppercase opacity-70">Tell us about your roof</span><textarea name="message" rows="3" placeholder="Age of roof, leaks, storm damage?" class="w-full resize-none rounded-[18px] border border-black/15 bg-paper px-4 py-3 text-sm outline-none focus:border-orange focus:ring-2 focus:ring-orange/15"></textarea></label><button class="h-[52px] w-full rounded-full bg-orange font-semibold text-white transition hover:bg-orange/90" type="submit">Send free estimate request →</button><p id="formMessage" class="hidden rounded-xl bg-green px-4 py-3 text-center text-sm font-semibold text-green-800">Thanks! Your request was received. We’ll be in touch soon.</p><p class="flex items-center justify-center gap-2 mono text-[10px] opacity-60">◷ Average response time: 22 minutes · No obligation</p></form></div></div></section>
+    <section>
+      <div class="container card">
+        <h2 class="section-title">Ready to protect your home?</h2>
+        <p class="section-copy">Call our local teams or request an inspection online today.</p>
+        <p><strong>Illinois:</strong> <a href="tel:+16186125192">(618) 612-5192</a> · <strong>Missouri:</strong> <a href="tel:+13142027663">(314) 202-7663</a></p>
+        <p><a class="button" href="contact.html">Contact Roofing Near Me STL</a></p>
+      </div>
+    </section>
   </main>
 
-  <footer class="border-t border-black/10 bg-white"><div class="mx-auto grid max-w-7xl gap-8 px-4 py-10 md:grid-cols-[1.3fr_.8fr_.8fr] md:px-6"><div><div class="flex items-center gap-3"><span class="grid h-10 w-10 place-items-center rounded-[10px] bg-ink text-white">⌂</span><b class="font-extrabold">ROOFINGNEARME<span class="text-orange">STL</span></b></div><p class="mt-4 max-w-sm text-sm leading-6 opacity-70">Dependable roofing and clear communication for St. Louis homeowners. We do it one way: the correct way.</p><p class="mt-4 inline-flex rounded-full border border-black/10 bg-paper px-3 py-1 mono text-[10px]">MO LIC #MO-ROOF-00000 · Fully insured</p></div><div><h3 class="mono text-[11px] uppercase tracking-widest opacity-60">Contact</h3><div class="mt-3 space-y-2 text-sm"><a href="tel:3145550147" class="block font-semibold hover:text-orange">(314) 555-0147</a><span class="block opacity-70">hello@roofingnearmestl.com</span><span class="block opacity-70">St. Louis, Missouri</span></div></div><div><h3 class="mono text-[11px] uppercase tracking-widest opacity-60">Hours</h3><div class="mt-3 space-y-2 mono text-xs"><p class="flex justify-between"><span class="opacity-60">Mon–Sat</span><span>7am–7pm</span></p><p class="flex justify-between"><span class="opacity-60">Sunday</span><span>Emergency only</span></p></div></div></div><div class="border-t border-black/10"><div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 mono text-[10px] opacity-60 md:px-6"><span>© <span id="year"></span> RoofingnearmeSTL. All rights reserved.</span><span class="hidden md:block">Built for Missouri wind, hail & ice</span></div></div><div class="h-2 bg-[repeating-linear-gradient(90deg,#ff6b00_0_16px,#111417_16px_32px)]"></div></footer>
-  <script>
-    const menuButton=document.getElementById('menuButton'),menu=document.getElementById('mobileMenu');menuButton.addEventListener('click',()=>{menu.classList.toggle('hidden');document.getElementById('menuIcon').textContent=menu.classList.contains('hidden')?'☰':'×'});document.querySelectorAll('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>{menu.classList.add('hidden');document.getElementById('menuIcon').textContent='☰'}));document.getElementById('year').textContent=new Date().getFullYear();document.getElementById('contactForm').addEventListener('submit',e=>{e.preventDefault();document.getElementById('formMessage').classList.remove('hidden');e.target.reset()});
-  </script>
+  <footer>
+    <div class="container footer-grid">
+      <div>
+        <h3>Roofing Near Me STL</h3>
+        <p class="muted">Professional roofing services in St. Louis with clear communication and detail-focused workmanship.</p>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <p class="muted">IL: (618) 612-5192<br>MO: (314) 202-7663</p>
+      </div>
+      <div>
+        <h3>Hours</h3>
+        <p class="muted">Mon–Fri: 7:00 AM – 6:00 PM<br>Sat: 8:00 AM – 2:00 PM</p>
+      </div>
+    </div>
+    <div class="container muted">© <span id="year"></span> Roofing Near Me STL. All rights reserved.</div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

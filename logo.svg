@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" role="img" aria-label="Roofing Near Me STL logo">
+  <polygon points="120,12 210,64 210,176 120,228 30,176 30,64" fill="#003b73"/>
+  <path d="M62 152h116M74 132h14m10 0h17m10 0h23m10 0h18" stroke="#9ec8f7" stroke-width="8" stroke-linecap="round"/>
+  <path d="M55 120l65-48 65 48" fill="none" stroke="#ffffff" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="120" y="190" text-anchor="middle" font-family="Arial, sans-serif" font-size="20" fill="#ffffff" font-weight="700">STL</text>
+</svg>
