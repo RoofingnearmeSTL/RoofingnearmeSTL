@@ -53,6 +53,7 @@ header {
   align-items: center;
   justify-content: space-between;
   padding: 0.9rem 0;
+  position: relative;
 }
 .brand {
   display: flex;

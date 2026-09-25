@@ -8,7 +8,7 @@
     });
   }
 
-  document.querySelectorAll('form[data-lead-form]').forEach(function (form) {
+  document.querySelectorAll('form[data-local-form]').forEach(function (form) {
     form.addEventListener('submit', function (event) {
       event.preventDefault();
       const note = form.querySelector('.form-note');
